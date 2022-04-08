@@ -10,4 +10,5 @@ while True:
     dobro = numero * 2
     triplo = numero * 3
     raiz_quadrada = sqrt(numero)
-    print(f'O dobro de {numero} é {dobro}, o triplo de {numero} é {triplo} e a raíz quadrada de {numero} é {raiz_quadrada}')
+    print(f'O dobro de {numero} é {dobro}, o triplo de {numero} é {triplo} '
+          f'e a raíz quadrada de {numero} é {raiz_quadrada:.5f}')
