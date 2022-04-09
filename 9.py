@@ -6,7 +6,7 @@ while continua != 'n':
       except ValueError:
             print('Digite apenas números inteiros!\n')
             continue
-      print(f'A tabuada deste número é: ')
+      print(f'{f"A tabuada do número {numero} é:":^30}')
       print(f' {numero*1}, '
             f'\n {numero*2}, '
             f'\n {numero*3}, '
