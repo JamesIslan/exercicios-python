@@ -5,7 +5,7 @@ while True:
     try:
         numero = int(input('Digite aqui um número inteiro: '))
     except ValueError:
-        print('Digite apenas números inteiros!')
+        print('Digite apenas números inteiros!\n')
         continue
     dobro = numero * 2
     triplo = numero * 3

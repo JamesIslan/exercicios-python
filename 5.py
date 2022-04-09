@@ -3,7 +3,7 @@ while True:
     try:
         numero = int(input("Digite aqui um número inteiro: "))
     except ValueError:
-        print(f'Digite apenas números inteiros!')
+        print(f'Digite apenas números inteiros!\n')
         continue
     antecessor = numero - 1
     sucessor = numero + 1

@@ -4,7 +4,7 @@ while continua != 'n':
     try:
         valor_metros = float(input('Digite aqui o valor em metros: '))
     except ValueError:
-        print(f'Digite apenas números inteiros ou de ponto flutuante!')
+        print(f'Digite apenas números inteiros ou de ponto flutuante!\n')
         continue
     conversao_centimetros = valor_metros * 100
     conversao_milimetros = conversao_centimetros * 10
