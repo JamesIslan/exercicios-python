@@ -6,6 +6,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-'/.idea/'
-'/.git/'
-'/__pycache__/'
+/.idea/
+/.git/
+/__pycache__/
