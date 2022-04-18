@@ -15,6 +15,6 @@ pares = list(sorted(filter(lambda x: x % 2 == 0, lista)))
 impares = list(sorted(filter(lambda x: x % 2 == 1, lista)))
 
 print('-='*35)
-print(f'Os números pares digitados foram: {str(pares)[1:-2]}')
-print(f'Os números ímpares digitados foram: {str(impares)[1:-2]}', sep=', ')
+print(f'Os números pares digitados foram: {str(pares)[1:-1]}')
+print(f'Os números ímpares digitados foram: {str(impares)[1:-1]}', sep=', ')
 print('-='*35)
