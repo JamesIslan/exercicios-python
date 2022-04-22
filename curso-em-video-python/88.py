@@ -1,3 +1,4 @@
+#Tratamento de erro incluso
 from random import shuffle
 
 print('-='*30)
