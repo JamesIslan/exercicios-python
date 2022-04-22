@@ -1,10 +1,10 @@
-from random import choice, choices
+from random import shuffle
 
 print('-='*30)
 print(f'{"SORTEADOR MEGA SENA" : ^50}')
 print('-='*30)
 
-lista = []
+numeros = list(range(1,60))
 qtd_jogos = int()
 
 while True:
@@ -19,10 +19,9 @@ print('-='*10, end=' ')
 print(f'{f"SORTEANDO {qtd_jogos} JOGOS"}', end=' ')
 print('-='*10, end='\n')
 
-for sorteio in range(qtd_jogos):
-    while len(lista) != qtd_jogos:
-
-    print(f'Jogo {sorteio+1}: {lista[sorteio]}')
+for jogo in range(qtd_jogos):
+    shuffle(numeros)
+    print(f'Jogo {jogo+1}: {numeros[0:6]}')
 
 print('-='*12, end=' ')
 print('BOA SORTE!', end=' ')
