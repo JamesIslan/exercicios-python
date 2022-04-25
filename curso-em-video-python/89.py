@@ -1,15 +1,15 @@
-#Tratamento de erro incluso
+# Tratamento de erro incluso
 lista = []
 continua = str()
 
 while continua != 'N':
     try:
         lista += \
-        [[
-            str(input('Digite o nome do aluno: ')).capitalize(),
-            [float(input('Digite a primeira nota do aluno: ')),
-            float(input('Digite a segunda nota do aluno: '))]
-        ]]
+            [[
+                str(input('Digite o nome do aluno: ')).capitalize(),
+                [float(input('Digite a primeira nota do aluno: ')),
+                 float(input('Digite a segunda nota do aluno: '))]
+            ]]
     except ValueError:
         print('Digite informações válidas!')
         continue
@@ -23,15 +23,15 @@ while continua != 'N':
             break
 print(lista)
 
-print('-='*15)
+print('-=' * 20)
 print(f'''
-No.     NOME        MÉDIA
+No.     NOME                MÉDIA
 ''')
-print('-'*30)
+print('-' * 40)
 contador = (num for num in range(len(lista)))
 for dados in lista:
     print(f'''
-{next(contador)}    {dados[0]}      {(sum(dados[1])/2):.1f}
+{next(contador):<4}    {dados[0]:<10}      {(sum(dados[1]) / 2):>8.1f}
     ''', end='\n')
 
 while True:
@@ -39,7 +39,7 @@ while True:
         notas_aluno = int(input('Deseja mostras as notas de que aluno? (Valores não numéricos param o programa: '))
         if notas_aluno in list(range(len(lista))):
             print(f'As notas de {lista[notas_aluno][0]} foram: {lista[notas_aluno][1]}')
-            print('-'*70)
+            print('-' * 70)
         else:
             print(f'Esse índice não consta em nosso cadastro!')
             continue
