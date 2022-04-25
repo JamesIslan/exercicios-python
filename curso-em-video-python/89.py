@@ -31,7 +31,7 @@ print('-'*30)
 contador = (num for num in range(len(lista)))
 for dados in lista:
     print(f'''
-{next(contador)}    {dados[0]}      {(sum(dados[1])/2)}
+{next(contador)}    {dados[0]}      {(sum(dados[1])/2):.1f}
     ''', end='\n')
 
 while True:
