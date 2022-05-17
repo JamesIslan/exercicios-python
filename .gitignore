@@ -9,3 +9,6 @@ Sala de testes/lista.py
 *.xml
 *.iml
 Sala de testes/dicionarios.py
+.idea/modules.xml
+.idea/Exercícios Python.iml
+curso-em-video-python/teste.py
