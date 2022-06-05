@@ -34,5 +34,5 @@ for k,v in dicionario.items():
 print('-='*40)
 print(f'O jogador {dicionario["nome"]} jogou {qtd_partidas} partidas.')
 for num in range(qtd_partidas):
-    print(f'    => Na partida {num+1}, fez {dicionario["gols"][num]} gols')
+    print(f'\t=> Na partida {num+1}, fez {dicionario["gols"][num]} gols')
 print(f'No total, o jogador fez {dicionario["total"]} gols')
