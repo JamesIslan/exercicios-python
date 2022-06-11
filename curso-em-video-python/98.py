@@ -5,10 +5,17 @@ def contador(inicio:int, fim:int, passo:int):
     else:
         numeros = list(range(fim, inicio+1))[::-1]
     print(f'Contagem de {inicio} a {fim}: ')
-    print(*numeros[::passo], sep=' , ')
-    print('Fim da contagem')
+    print(*numeros[::passo], sep='  ')
+    print('Fim da contagem',)
+    print('')
+
 
 inicio = fim = passo = int()
+
+contador(1, 10, 1)
+contador(10, 0, 2)
+
+print('Contagem personalizada:')
 
 while True:
     try:
