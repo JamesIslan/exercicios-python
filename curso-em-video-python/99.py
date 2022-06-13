@@ -1,5 +1,5 @@
 # Tratamento de erro incluso
-def maior(*num: (int, float, list, tuple)):
+def maior(*num: int | float | list | tuple):
     maior = max(*num)
     print(f'O maior número é {maior}')
 
@@ -9,7 +9,7 @@ valores = []
 while True:
     while True:
         try:
-            valores.append(input('Digite um valor: '))
+            valores.append(int(input('Digite um valor: ')))
             break
         except ValueError:
             print('Digite um valor válido!')
