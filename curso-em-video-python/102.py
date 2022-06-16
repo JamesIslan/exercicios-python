@@ -1,5 +1,11 @@
 # Tratamento de erro incluso
 def fatorial(num: int = int(), show: bool = bool()):
+    """
+    \t-> Função para calcular o Fatorial de um número inteiro.
+    :param num: Número a ser calculado
+    :param show: Mostrar ou não o passo a passo da resolução
+    :return: Valor final da operação
+    """
     calc = 1
     for i in range(num, 0, -1):
         if show:
