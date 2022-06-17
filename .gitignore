@@ -13,3 +13,4 @@ Sala de testes/dicionarios.py
 .idea/Exercícios Python.iml
 curso-em-video-python/teste.py
 .idea
+*.pyc
