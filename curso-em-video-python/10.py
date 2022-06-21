@@ -1,6 +1,7 @@
 # Tratamento de erro incluso
 
 while True:
+    global carteira
     try:
         carteira = float(input(f'Digite aqui a quantia em Reais (R$): '))
         break

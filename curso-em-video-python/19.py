@@ -1,3 +1,4 @@
+# Tratamento de erro incluso
 import random
 
 aluno1 = "Garibaldo"

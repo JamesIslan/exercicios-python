@@ -1,6 +1,14 @@
 import math
 
-angulo = int(input('Digite aqui o valor de um ângulo: '))
+while True:
+      global angulo
+      try:
+            angulo = int(input('Digite aqui o valor de um ângulo: '))
+            break
+      except ValueError:
+            print('Digite um valor válido!')
+            continue
+
 seno = "{:.2f}".format(math.sin(math.radians(angulo)))
 cosseno = "{:.2f}".format(math.cos(math.radians(angulo)))
 tangente = "{:.2f}".format(math.tan(math.radians(angulo)))
