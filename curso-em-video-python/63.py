@@ -1,5 +1,13 @@
-q = int(input('Termos:'))
+
+while True:
+    global q
+    try:
+        q = int(input('Termos: '))
+        break
+    except ValueError:
+        print('Digite um valor válido!')
+        continue
 termos = [0, 1, 1]
-for i in range(q):
+while len(termos) < q:
     termos.append(sum(termos[-2::]))
-print(str(termos[0:q])[1:-1])
+print(*termos, sep=', ')
