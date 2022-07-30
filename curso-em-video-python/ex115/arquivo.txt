@@ -1,0 +1,9 @@
+sergio;32
+sergio;34
+kaio;32
+sergio;43
+kaio;34
+alice;43
+melyssa;32
+kaio;21
+joamerson;32
