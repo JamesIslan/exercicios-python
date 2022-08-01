@@ -1,5 +1,8 @@
 # Tratamento de erro incluso
-from utilidadescev import formatador, dado
+from utilidadescev import dado, formatador
+
+
+
 
 while True:
     global p
